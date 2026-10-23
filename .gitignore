@@ -1,0 +1,12 @@
+# Raw and generated data (download the dataset from UCI; see data/README.md)
+data/raw/
+data/processed/
+data/powerbi/
+outputs/
+
+# Python
+.venv/
+__pycache__/
+
+# Power BI local caches and settings
+**/.pbi/
