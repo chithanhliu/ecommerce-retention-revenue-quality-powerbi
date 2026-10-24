@@ -1,6 +1,6 @@
 # E-commerce Customer Retention & Revenue Quality Intelligence
 
-**An SQL (DuckDB) and Power BI analysis of the UCI Online Retail II dataset: a UK online wholesale and gift retailer, December 2009 – December 2011.**
+**A SQL and Power BI analysis of the UCI Online Retail II dataset: a UK online wholesale and gift retailer, December 2009 – December 2011.**
 
 ## TL;DR
 
@@ -10,7 +10,7 @@
 >
 > **Recommendation:** investigate where the unidentified transactions come from, review the top-value accounts, and standardise on one cancellation KPI (the unclassified version overstates cancellations 2–3×).
 >
-> **How:** DuckDB SQL pipeline over 1,067,371 rows → 5-page Power BI dashboard · 145 SQL checks + 137 DAX checks pass · 53/53 KPIs reconcile to SQL.
+> **How:** SQL pipeline over 1,067,371 rows → 5-page Power BI dashboard · 145 SQL checks + 137 DAX checks pass · 53/53 KPIs reconcile to SQL.
 
 📄 **[View the dashboard as a PDF](docs/Dashboard_Preview.pdf)** (no Power BI needed) · ⬇ [Download the .pbix](powerbi/Online_Retail_II_Retention_Revenue_Quality.pbix) · [Findings](docs/findings_and_recommendations.md) · [Methodology](docs/methodology.md)
 
@@ -58,7 +58,7 @@ Recorded sales grew slightly between the two trading years. Before management ac
 ## Data preparation and SQL approach
 
 ```
-UCI Excel ──► DuckDB staging ──► model (invoice · customer × day · customer)
+UCI Excel ──► SQL staging ──► model (invoice · customer × day · customer)
           ──► KPI & analysis views ──► automated checks ──► Parquet export ──► Power BI (import)
 ```
 
@@ -204,7 +204,7 @@ README.md            this page
 LICENSE              MIT (code) — the dataset is CC BY 4.0, see below
 powerbi/             Online_Retail_II_Retention_Revenue_Quality.pbix
 images/              dashboard screenshots (pages 1–5)
-sql/                 DuckDB SQL: staging, model, KPIs, analysis, Power BI shaping, checks
+sql/                 SQL: staging, model, KPIs, analysis, Power BI shaping, checks
 scripts/             run_pipeline.py: loads the workbook, runs the SQL in order, validates, exports Parquet
 docs/                methodology.md, findings_and_recommendations.md
 data/README.md       download link, checksums, licence (raw data is not included)
