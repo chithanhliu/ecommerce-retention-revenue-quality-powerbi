@@ -2,6 +2,18 @@
 
 **An SQL (DuckDB) and Power BI analysis of the UCI Online Retail II dataset: a UK online wholesale and gift retailer, December 2009 – December 2011.**
 
+## TL;DR
+
+> **Problem:** recorded sales grew 1.6% year on year. Can management trust that headline, and what is behind it?
+>
+> **Finding:** the growth came from transactions **without a Customer ID** (+32.1%), while value from identified customers **fell 2.3%**. Customer-level KPIs therefore describe a shrinking share of the business. Value is also concentrated: 7.2% of returning customers hold 49.8% of their group's value.
+>
+> **Recommendation:** investigate where the unidentified transactions come from, review the top-value accounts, and standardise on one cancellation KPI (the unclassified version overstates cancellations 2–3×).
+>
+> **How:** DuckDB SQL pipeline over 1,067,371 rows → 5-page Power BI dashboard · 145 SQL checks + 137 DAX checks pass · 53/53 KPIs reconcile to SQL.
+
+📄 **[View the dashboard as a PDF](docs/Dashboard_Preview.pdf)** (no Power BI needed) · ⬇ [Download the .pbix](powerbi/Online_Retail_II_Retention_Revenue_Quality.pbix) · [Findings](docs/findings_and_recommendations.md) · [Methodology](docs/methodology.md)
+
 ![Executive Overview](images/01_executive_overview.jpg)
 
 ## Project overview
