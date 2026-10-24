@@ -14,7 +14,7 @@
 
 📄 **[View the dashboard as a PDF](docs/Dashboard_Preview.pdf)** (no Power BI needed) · ⬇ [Download the .pbix](powerbi/Online_Retail_II_Retention_Revenue_Quality.pbix) · [Findings](docs/findings_and_recommendations.md) · [Methodology](docs/methodology.md)
 
-![Executive Overview](images/01_executive_overview.jpg)
+![Executive Overview](images/01_executive_overview.png)
 
 ## Project overview
 
@@ -109,8 +109,8 @@ A hidden *Data Notes & Reconciliation* page lists the definitions and compares 5
 
 | | |
 |---|---|
-| ![Commercial Drivers](images/02_commercial_drivers.jpg) **2 Commercial Drivers** | ![Customer Retention](images/03_customer_retention.jpg) **3 Customer Retention** (Jan 2010 cohort selected) |
-| ![Customer Value & Segmentation](images/04_customer_value_segmentation.jpg) **4 Value & Segmentation** (F4 × V3 segment selected) | ![Decision Brief](images/05_decision_brief.jpg) **5 Decision Brief** |
+| ![Commercial Drivers](images/02_commercial_drivers.png) **2 Commercial Drivers** | ![Customer Retention](images/03_customer_retention.png) **3 Customer Retention** |
+| ![Customer Value & Segmentation](images/04_customer_value_segmentation.png) **4 Value & Segmentation** | ![Decision Brief](images/05_decision_brief.png) **5 Decision Brief** |
 
 ## Key analytical findings
 
